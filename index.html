@@ -1,0 +1,60 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GLeasfy | Portfólio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header>
+    <h1>GLeasfy</h1>
+    <nav>
+        <ul>
+          <li><a href="index.html">Galeria</a></li>
+          <li><a href="nsfw.html">NSFW</a></li>
+          <li><a href="commissions.html">Comissões</a></li>
+          <li><a href="about.html">Sobre Mim</a></li>
+        </ul>
+      </nav>      
+    <nav>
+      <div class="lang-switch">
+        <button data-lang="pt"></button>
+        <button data-lang="en"></button>
+        <button data-lang="es"></button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="gallery">
+        <img src="gallery/1.png" alt="" onclick="openModal(this)">
+        <img src="Gallery/2.png" alt="" onclick="openModal(this)">
+        <img src="Gallery/3.png" alt="" onclick="openModal(this)">
+        <img src="Gallery/4.png" alt="" onclick="openModal(this)">
+        <img src="Gallery/5.png" alt="" onclick="openModal(this)">
+        <img src="gallery/6.png" alt="" onclick="openModal(this)">
+        <img src="Gallery/7.png" alt="" onclick="openModal(this)">
+        <img src="Gallery/8.png" alt="" onclick="openModal(this)">
+        <img src="Gallery/9.png" alt="" onclick="openModal(this)">
+        <img src="Gallery/10.png" alt="" onclick="openModal(this)">
+        <img src="Gallery/11.png" alt="" onclick="openModal(this)">
+        <img src="Gallery/12.png" alt="" onclick="openModal(this)">
+        <!-- Adicione quantas imagens quiser -->
+      </section>
+      
+      <!-- Modal para imagem ampliada -->
+      <div class="modal" id="modal">
+        <img id="modal-image" src="" alt="Imagem ampliada">
+        <p class="caption" id="modal-caption"></p>
+        <button class="close-btn" onclick="closeModal()">X</button>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; GLeasfy. Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>
